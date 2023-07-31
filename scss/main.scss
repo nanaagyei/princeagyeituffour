@@ -146,6 +146,60 @@ main {
     }
 }
 
+// Contact
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem;
+
+    div {
+        font-size: 2rem;
+        border: 3px #fff solid;
+        padding: 1.5rem 2.5rem;
+        margin-bottom: 3rem;
+        @include easeOut();
+
+        &:hover {
+            padding: 0.5rem 1.5rem;
+            background: $secondary-color;
+            color: set-text-color($secondary-color);
+            @include easeOut();
+
+            span {
+                color: set-text-color($secondary-color);
+            }
+        }
+    }
+}
+// .contact-form {
+//     margin-top: 1rem;
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
+//     grid-gap: 20px;
+
+//     .form-group {
+//         display: flex;
+//         flex-direction: column;
+//     }
+
+//     .form-control {
+//         height: 100%;
+//         padding: 0.5rem;
+//         margin-bottom: 0.5rem;
+//         border: none;
+//         background: lighten($primary-color, $amount: 5);
+//         color: set-text-color(lighten($primary-color, $amount: 5));
+//     }
+
+//     .submit {
+//         background: $secondary-color;
+//         color: set-text-color($secondary-color);
+//         @include easeOut();
+//     }
+// }
+
 // Button Styles
 .btn {
     display: block;
