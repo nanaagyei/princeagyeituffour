@@ -233,6 +233,9 @@ main {
   background: #c4c4c4;
   color: #333; }
 
+.resume-btn {
+  display: inline-block; }
+
 #main-footer {
   text-align: center;
   padding: 1rem;
